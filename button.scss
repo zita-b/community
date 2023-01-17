@@ -1,0 +1,24 @@
+button {
+  white-space: nowrap;
+  font-family: $font;
+  height: 2.5em;
+  background-color: $accent;
+  color: white;
+  font-weight: 800;
+  border: none;
+  border-radius: 0.2em;
+  padding: 2%;
+  display: inline-flex;
+  align-items: center; 
+  width: 150px;
+  min-width: fit-content;
+  letter-spacing: 0.1em;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  transition: all 0.2s linear;
+  &:hover {
+    background-color: rgb(72, 157, 219);
+    transform: scale(103%);
+    cursor: pointer;
+  }
+}

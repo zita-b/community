@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Community</title>
+    <script
+      src="https://kit.fontawesome.com/0d4eb7e413.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="./script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./images/favicon.svg" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="nav_container">
+          <div class="icon_container nav_icon_container">
+            <i class="fa-solid fa-face-smile"></i>
+            <span>Helpeveryone</span>
+          </div>
+
+          <ul>
+            <li>
+              <a href="/services" target="_blank">Services</a>
+            </li>
+
+            <li>
+              <a href="#form">Donate</a>
+            </li>
+
+            <li>
+              <a href="/about" target="_blank">Who we are</a>
+            </li>
+
+            <li>
+              <a href="#footer">Contact us</a>
+            </li>
+          </ul>
+        </div>
+
+        <button type="button">
+          <a href="/register" target="_blank"> Sign up </a>
+        </button>
+      </nav>
+
+      <nav class="navigation-menu">
+        <div
+          class="icon_container nav_icon_container navigation-menu-icon_container"
+        >
+          <i class="fa-solid fa-face-smile"></i>
+          <span>Helpeveryone</span>
+        </div>
+        <label
+          class="hamburger-icon"
+          aria-label="Open navigation menu"
+          for="menu-toggle"
+          >&#9776;</label
+        >
+        <input type="checkbox" id="menu-toggle" />
+        <ul class="main-navigation">
+          <li>
+            <a href="/services" target="_blank">Services</a>
+          </li>
+
+          <li>
+            <a href="#form">Donate</a>
+          </li>
+
+          <li>
+            <a href="/about" target="_blank">Who we are</a>
+          </li>
+
+          <li>
+            <a href="#footer">Contact us</a>
+          </li>
+
+          <li>
+            <button type="button">
+              <a href="/register" target="_blank"> Sign up </a>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero_text">
+          <div class="hero_text_title">
+            <h1><span>Together </span>We Help</h1>
+            <h1>People Lead a <span>Better Life</span></h1>
+          </div>
+
+          <p class="hero_text_intro">
+            If you are somebody who likes to make a difference, Helpeveryone is
+            the right place for you.
+          </p>
+
+          <div class="hero_text_buttons">
+            <button>
+              <a href="/register" target="_blank"> Get Started </a>
+            </button>
+            <button>
+              <a href="/register"> Get Started </a>
+            </button>
+
+            <button class="hero_text_buttons-watch">
+              <a href="https://www.youtube.com/" target="_blank">
+                Watch our story</a
+              >
+            </button>
+          </div>
+        </div>
+
+        <div class="hero-image"></div>
+      </section>
+
+      <section class="about-us">
+        <img
+          src="./images/sun-and-clouds.png"
+          alt="illustration of a sun and some clouds"
+        />
+        <div class="about-us-text">
+          <h2>About Us</h2>
+
+          <p>
+            Helpeveryone connects individuals who want to make a difference with
+            those in our community who need help the most. Sign up to get
+            started as a volunteer or check out our services below.
+          </p>
+        </div>
+
+        <img src="./images/tents.png" alt="illustration of two tents" />
+      </section>
+
+      <section class="our-services">
+        <h2>Our Services</h2>
+
+        <p>Our foundation offers the following services:</p>
+      </section>
+
+      <section class="card-container"></section>
+      <section class="get-help">
+        <div class="get-help-container">
+          <div class="get-help-container-image"></div>
+          <div class="get-help-container-text">
+            <h2>Are You In Need Of Help?</h2>
+            <button>
+              <a
+                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                target="_blank"
+                >Get in Touch</a
+              >
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="form-container" id="form">
+        <div>
+          <h3>Request A Free Consultation</h3>
+          <p>
+            Fill Out The Form Below and One of Our Consultants Will Contact You
+            Shortly.
+          </p>
+        </div>
+        <form class="form-container-form" action="/signup" method="post">
+          <div class="form-container-form-row">
+            <div class="form-container-form-input">
+              <label for="name">Full name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                required
+                minlength="5"
+                maxlength="40"
+              />
+            </div>
+
+            <div class="form-container-form-input">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                minlength="7"
+                maxlength="40"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+              />
+            </div>
+          </div>
+
+          <div class="form-container-form-row">
+            <div class="form-container-form-input">
+              <label for="state">State</label>
+              <select name="state" id="state" required>
+                <option disabled selected>Select Your State</option>
+              </select>
+            </div>
+
+            <div class="form-container-form-input">
+              <label for="phone">Phone</label>
+              <input type="tel" name="phone" id="phone" />
+            </div>
+          </div>
+          <div class="form-container-form-row">
+            <button type="submit" class="form-submit">Submit</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer" id="footer">
+      <div class="footer-intro">
+        <div class="icon_container">
+          <i class="fa-solid fa-face-smile"></i>
+          <span>Helpeveryone</span>
+        </div>
+        <div class="footer-intro-title">
+          <h4><span>Together </span>We Help</h4>
+          <h4>People Lead a <span>Better Life</span></h4>
+        </div>
+        <p>Copyright @ 2023 Helpeveryone LLC All Rights Reserved</p>
+      </div>
+
+      <table>
+        <tr>
+          <th>Services</th>
+          <th>Info</th>
+          <th>Office</th>
+        </tr>
+        <tr>
+          <td>
+            <a href="/services" target="_blank"> Buying Food </a>
+          </td>
+          <td>
+            <a href="/about" target="_blank"> About Us </a>
+          </td>
+          <td>43 Borer Str</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/services" target="_blank"> Elderly Care </a>
+          </td>
+          <td>
+            <a href="/contact" target="_blank"> Contact Us </a>
+          </td>
+          <td>Zackchester</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/services" target="_blank"> Guardianship </a>
+          </td>
+          <td>
+            <a href="/support" target="_blank"> Support </a>
+          </td>
+          <td>Bahamas</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/blog" target="_blank"> Other </a>
+          </td>
+          <td>
+            <a href="/jobs" target="_blank"> Jobs </a>
+          </td>
+          <td>
+            <a href="tel:7344576"> 734-45-76 </a>
+          </td>
+        </tr>
+      </table>
+    </footer>
+  </body>
+</html>

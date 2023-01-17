@@ -1,0 +1,62 @@
+.card {
+  @include flex-around;
+  align-items: center;
+  &-text {
+    text-align: justify;
+    @media (max-width: 1125px) {
+      width: 100%;
+    }
+    @include flex-between;
+    width: 50%;
+    flex-direction: column;
+    gap: 2vh;
+    &-button-container {
+      position: relative;
+      z-index: 0;
+      & :nth-child(2) {
+        @include button-decor;
+        position: absolute;
+        left: 0;
+        color: transparent;
+      }
+    }
+    &-justify {
+      text-align: justify;
+    }
+  }
+  &-image {
+    margin: 2%;
+    @media (max-width: 710px) {
+      height: 50vw;
+      width: 100%;
+    }
+    width: 50%;
+    height: 25vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.accent {
+  background-color: #ffafb1;
+  @media (min-width: 1125px) {
+    flex-direction: row-reverse;
+  }
+}
+
+//tablet
+@media (min-width: 711px) and (max-width: 1125px) {
+  .card {
+    display: block;
+    &-text {
+      display: block;
+      width: 100%;
+    }
+    &-image {
+      float: left;
+    }
+  }
+  .float-right {
+    float: right;
+  }
+}
