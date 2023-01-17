@@ -22,6 +22,9 @@ button:hover {
   transform: scale(103%);
   cursor: pointer;
 }
+button:active {
+  transform: scale(95%);
+}
 
 .card {
   display: flex;
