@@ -27,6 +27,7 @@ button:hover {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .card-text {
   text-align: justify;
@@ -433,6 +434,7 @@ main {
 }
 
 .get-help-container {
+  box-shadow: rgba(39, 79, 119, 0.2) 0px 8px 24px;
   display: flex;
   justify-content: space-around;
   width: 80%;
@@ -491,9 +493,9 @@ main {
   justify-content: space-around;
 }
 .form-container-form-row button {
-  margin: 0 auto;
-  width: 30vw;
   font-weight: 600;
+  width: fit-content;
+  padding: 2% 8%;
 }
 .form-container-form-input {
   display: flex;

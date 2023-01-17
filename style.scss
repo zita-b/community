@@ -259,6 +259,7 @@ main {
 
 .get-help {
   &-container {
+    box-shadow: rgba(39, 79, 119, 0.2) 0px 8px 24px;
     @include flex-around;
     width: 80%;
     margin: 0 auto;
@@ -307,9 +308,9 @@ main {
     &-row {
       @include flex-around;
       & button {
-        margin: 0 auto;
-        width: 30vw;
         font-weight: 600;
+        width: fit-content;
+        padding: 2% 8%;
       }
     }
     &-input {

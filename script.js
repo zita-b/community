@@ -80,6 +80,11 @@ setInterval(() => {
   };
 }, 3000);
 
+window.addEventListener("resize", () => {
+  mobileNav.style.display = "none";
+  document.getElementById("menu-toggle").checked = false;
+})
+
 //automatically untoggle menu if user keeps scrolling
 let scrolled = {};
 
@@ -89,7 +94,6 @@ document.getElementById("menu-toggle").addEventListener("click", () => {
       scrolled.y = window.scrollY;
     }
 
-    console.log(scrolled.y);
     if (
       window.scrollY > scrolled.y + 800 ||
       window.scrollY < scrolled.y - 800
